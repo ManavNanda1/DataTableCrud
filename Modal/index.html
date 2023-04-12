@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link rel="stylesheet" href="datatables.min.css">
+    <title>Tasks Of Javascript / Jquery</title>
+  </head>
+  <body>
+
+    <div class="container text-center mt-5 mb-3">
+      <buton class="btn btn-primary getModalBtn">Click Me to Get Modal</buton>
+    </div>
+
+    <div class="container text-center mb-3">
+      <input type="text" placeholder="Search Content Here" id="Searchbar" onkeypress="Search()">
+    </div>
+
+    <div class="container text-center justify-content-center align-content-center customModal" >
+        <div class="modalheader text-center mb-3" >
+         <b>Hello This is An Customized Modal</b>
+        </div>
+        <div class="modalbody">
+          <div class="name">
+            Name: <input type="text" placeholder="Enter Your Name Here " id="Name">
+          </div>
+          <div class="email mt-3">
+            Email: <input type="Email" placeholder="Enter Your Email Here " id="Email">
+          </div>
+          <div class="password mt-3">
+            Password: <input type="password" placeholder="Enter Your Password Here " id="Password">
+          </div>
+         
+        </div>
+        <div class="modalfooter mt-4">
+          <button class="btn btn-info subbtn">Submit</button>
+          <button class="btn btn-danger closebtn">Close</button>
+        </div>
+    </div>
+
+    <div class="container text-center mt-4">
+    <table class="table table-responsive text-center table-dark MainTable">
+      <thead>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Password</th>
+        <th>Action</th>
+        <th>Edit Data</th>
+      </thead>
+      <tbody class="tbody">
+        <!-- Data Stored Here Using Modal -->
+      </tbody>
+    </table>
+  </div>
+  </body>
+  <script src="bootstrap.bundle.min.js"></script>
+  <script src="jquery-3.6.3.js"></script>
+  <script src="datatables.min.js"></script>
+  <script src="script.js"></script>
+</html>

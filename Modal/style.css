@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Itim', cursive;
+}
+body{
+     background-color: #333333 !important;
+      color: white; 
+}
+
+::placeholder{
+    text-align: center;
+    padding: 0;
+}
+
+.customModal{
+    background-color: rgb(175, 175, 253);
+    border: 3px solid black;
+    height: 250px;
+    display: none;
+    color: black;
+}
+
+#Name,#Email,#Password{
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: auto;
+}
+
+#Searchbar{
+    width: 300px;
+    border-radius: 10px;
+}
